@@ -83,6 +83,10 @@ func validate() -> Array[String]:
 				if not statement.has(key):
 					errors.append("Statement '%s/%s' is missing '%s'." % [debate_id, statement_id, key])
 
+			for option in statement.get("player_options", []):
+				if not option.has("label") or not option.has("response"):
+					errors.append("Statement '%s/%s' has a player option missing label/response." % [debate_id, statement_id])
+
 			var evidence_id := String(statement.get("contradiction_evidence_id", ""))
 			if not evidence_id.is_empty() and not evidence.has(evidence_id):
 				errors.append("Statement '%s/%s' references missing evidence '%s'." % [debate_id, statement_id, evidence_id])

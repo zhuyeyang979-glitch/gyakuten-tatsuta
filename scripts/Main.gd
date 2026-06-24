@@ -8,6 +8,7 @@ var game_data
 var current_node_id := ""
 var current_line_index := 0
 var current_debate_id := ""
+var last_debate_node_id := "main_debate"
 var current_statement_index := 0
 var reputation := MAX_REPUTATION
 var feedback_text := ""
@@ -180,6 +181,7 @@ func _go_node(node_id: String) -> void:
 			_render_investigation()
 		"debate":
 			current_debate_id = String(node.get("debate_id", ""))
+			last_debate_node_id = node_id
 			current_statement_index = 0
 			_render_debate()
 		"result":
@@ -315,6 +317,13 @@ func _render_debate() -> void:
 	if not feedback_text.is_empty():
 		main_box.add_child(_make_feedback_box(feedback_text))
 
+	var player_options: Array = statement.get("player_options", [])
+	if not player_options.is_empty():
+		main_box.add_child(_make_label("辰田昇的追问选项", 22, Color("#ffd166")))
+		for option_index in range(player_options.size()):
+			var option: Dictionary = player_options[option_index]
+			main_box.add_child(_make_button(String(option.get("label", "追问")), Callable(self, "_choose_player_option").bind(option_index), present_mode))
+
 	footer_box.add_child(_make_button("前一句", Callable(self, "_move_statement").bind(-1), current_statement_index == 0))
 	footer_box.add_child(_make_button("后一句", Callable(self, "_move_statement").bind(1), current_statement_index == statements.size() - 1))
 	footer_box.add_child(_make_button("追问", Callable(self, "_press_statement")))
@@ -333,6 +342,19 @@ func _press_statement() -> void:
 	var statement: Dictionary = _current_statement()
 	present_mode = false
 	feedback_text = "%s\n\n【提示】%s" % [statement.get("press_text", ""), statement.get("hint", "")]
+	_render_debate()
+
+
+func _choose_player_option(option_index: int) -> void:
+	var statement: Dictionary = _current_statement()
+	var player_options: Array = statement.get("player_options", [])
+	if option_index < 0 or option_index >= player_options.size():
+		return
+
+	var option: Dictionary = player_options[option_index]
+	present_mode = false
+	selected_evidence_id = ""
+	feedback_text = String(option.get("response", ""))
 	_render_debate()
 
 
@@ -403,7 +425,7 @@ func _retry_debate() -> void:
 	feedback_text = ""
 	present_mode = false
 	selected_evidence_id = ""
-	_go_node("main_debate")
+	_go_node(last_debate_node_id)
 
 
 func _render_evidence_panel() -> void:

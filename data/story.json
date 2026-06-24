@@ -1,36 +1,64 @@
 {
   "metadata": {
     "title": "逆转辰田",
-    "case_title": "第一回：主义主义与月末辩论",
-    "version": "0.1.1"
+    "case_title": "第一回：一元论诺斯替主义：华伦提诺",
+    "version": "0.3.0"
   },
   "evidence": [
     {
       "id": "ideology_handout",
       "name": "意识形态学讲义",
-      "description": "本月探索位格：功利主义-结果-少数-责任。",
-      "detail": "讲义强调，结果主义辩论不能只报总收益，也必须说明代价由谁承担、是否被纳入计算。",
+      "description": "本月探索位格：（1-2-1-3）一元论诺斯替主义：华伦提诺。",
+      "detail": "本节课讨论瓦伦廷派诺斯替主义如何解释神圣秩序、恶、救赎和现实附会。",
       "unlocked": true
     },
     {
       "id": "debate_rule_card",
       "name": "辩论赛规则卡",
-      "description": "月末辩论赛的规则。指证必须针对论证前提或证据来源。",
-      "detail": "老师写下的规则很简单：追问用于暴露前提，指证用于击穿前提。攻击人格不计分。",
+      "description": "月末辩论赛规则：追问暴露前提，指证击穿前提。",
+      "detail": "正文可以作为未明子的陈述，笺注可以作为辰田昇的追问和指证材料。",
       "unlocked": true
     },
     {
-      "id": "history_fragment",
-      "name": "历史影像片段",
-      "description": "AR精灵展示的旧人类听证会影像，内容是一次救援资源分配争议。",
-      "detail": "影像中，救援委员会先宣称方案让大多数人获救；随后记录员承认，被放弃区域的人数没有写入最初统计。",
+      "id": "note_mainstream",
+      "name": "辰田笺注4：并非主流",
+      "description": "“二世纪很主流的诺斯替主义”这个说法过于含混。",
+      "detail": "笺注指出，诺斯替主义并不是统一运动，也从未成为教会正统或主流；它更像多种互不相属的学派潮流。",
       "unlocked": false
     },
     {
-      "id": "argument_blackboard",
-      "name": "未明子的论点板书",
-      "description": "未明子课前写下的三段式论证。",
-      "detail": "板书写着：若方案增加总生存人数，则方案正当；本案增加总生存人数；因此本案正当。",
+      "id": "note_sophia_single",
+      "name": "辰田笺注10/12：Sophia并非一对堕落",
+      "description": "瓦伦廷派中堕落的是Sophia一个，而非一对。",
+      "detail": "笺注指出，与Sophia成对的是Theletos，即“渴望”。未明子把Sophia、Sakla和成对移涌混在一起。",
+      "unlocked": false
+    },
+    {
+      "id": "note_theodicy_gap",
+      "name": "辰田笺注14/15：剩余没有被调和",
+      "description": "“Sophia的堕落”解释了恶的来源，却没有解决恶何以存在。",
+      "detail": "笺注指出，如果问题是“上帝创造的世界为何存在恶”，把恶归给Sophia的堕落只是把问题后移；未明子还在Theodicy、evil、Creationism之间摇摆。",
+      "unlocked": false
+    },
+    {
+      "id": "note_roman_context",
+      "name": "辰田笺注16/17：二世纪罗马语境",
+      "description": "二世纪罗马统治者并不坚持三位一体，基督教也不是帝国统治术。",
+      "detail": "笺注指出，二世纪基督教仍是被打压的异教，教廷是地下组织；因此“罗马统治者需要三位一体来维稳”是前尼西亚时期的伪问题。",
+      "unlocked": false
+    },
+    {
+      "id": "note_triads",
+      "name": "辰田笺注23/24/26：三元与一元的滑动",
+      "description": "未明子的“一元论”和“三元论”说明并不稳定。",
+      "detail": "笺注指出，瓦伦廷派的三元是物质、魂、灵，或工匠、父、王；所谓“一元论”若只指一个造世者，理论区分力很弱。",
+      "unlocked": false
+    },
+    {
+      "id": "note_worldly_analogy",
+      "name": "辰田笺注31：世俗附会不成立",
+      "description": "“上面的本意是好的，都是下面执行坏了”不能解决世俗神正论危机。",
+      "detail": "笺注指出，人们今天把这种说法当成典型加以嘲讽，说明它并不能通过庸俗诺斯替式解释真正调和矛盾。",
       "unlocked": false
     }
   ],
@@ -41,97 +69,154 @@
       "lines": [
         {
           "speaker": "辰田昇",
-          "text": "初中的第一个月末，意识形态学教室被改成了辩论场。黑板上写着本月位格：功利主义-结果-少数-责任。"
+          "text": "月初公布的位格终于轮到（1-2-1-3）：一元论诺斯替主义。未明子站在电子白板前，把“主义主义”四个字写得很重。"
         },
         {
-          "speaker": "AR精灵",
-          "text": "旧人类也经常用“结果”解释选择。今天别急着反驳结论，先听清她把哪些东西算进去了。"
+          "speaker": "未明子",
+          "text": "今天讲华伦提诺。也就是瓦伦廷。这个人很有意思，他的体系能把神正论里剩下的东西圆回去。"
         },
         {
           "speaker": "老师",
-          "text": "辰田昇，未明子。哲学王候补的第一次正面对决，现在开始。"
+          "text": "这篇材料很长，所以本轮辩论拆成五个小回合。每回合只处理一个前提。"
         }
       ],
       "next": "investigation"
     },
     "investigation": {
       "mode": "investigation",
-      "scene": "辩论前调查",
+      "scene": "辩论前整理笺注",
       "lines": [
         {
           "speaker": "辰田昇",
-          "text": "未明子把板书写得太整齐了。像是她已经提前知道我要从哪里切入。"
+          "text": "未明子的正文很快，像一口气把神话、历史和现实例子都压进同一块黑板。我需要把笺注整理成能在辩论里使用的反驳。"
         }
       ],
       "investigations": [
         {
-          "id": "review_history",
-          "title": "回看历史影像",
-          "text": "旧人类的听证会上，记录员承认最初统计没有写入被放弃区域的人数。AR精灵提醒：少数不是统计表外的空白。",
-          "unlock_evidence": "history_fragment"
+          "id": "check_mainstream_note",
+          "title": "整理历史定位",
+          "text": "笺注4指出，诺斯替主义不是统一运动，也从未成为教会正统或主流。",
+          "unlock_evidence": "note_mainstream"
         },
         {
-          "id": "check_handout",
-          "title": "翻看讲义",
-          "text": "讲义页脚写着：结果主义的计算必须公开代价，否则它只是在替决定者藏起一部分人。",
-          "unlock_evidence": ""
+          "id": "check_sophia_note",
+          "title": "整理Sophia段落",
+          "text": "笺注10和12指出，堕落的是Sophia一个；与Sophia成对的是Theletos，不是Sakla。",
+          "unlock_evidence": "note_sophia_single"
         },
         {
-          "id": "inspect_blackboard",
-          "title": "检查板书",
-          "text": "未明子的论证没有提到代价归属。她把“总生存人数增加”当成唯一判断标准。",
-          "unlock_evidence": "argument_blackboard"
+          "id": "check_theodicy_note",
+          "title": "整理神正论段落",
+          "text": "笺注14和15都指向同一个裂缝：未明子说“调和”，但她没有稳定说明被调和的到底是什么。",
+          "unlock_evidence": "note_theodicy_gap"
+        },
+        {
+          "id": "check_roman_note",
+          "title": "整理三位一体段落",
+          "text": "笺注16和17指出，二世纪基督教仍被罗马帝国打压，罗马统治者不可能用三位一体来维稳。",
+          "unlock_evidence": "note_roman_context"
+        },
+        {
+          "id": "check_world_note",
+          "title": "整理生活附会段落",
+          "text": "笺注31指出，“上面的本意是好的，都是下面执行坏了”不能真正解决世俗神正论式危机。",
+          "unlock_evidence": "note_worldly_analogy"
         }
       ],
       "next": "debate_opening"
     },
     "debate_opening": {
       "mode": "story",
-      "scene": "月末辩论 / 第一轮",
+      "scene": "月末辩论 / 五回合制",
       "lines": [
         {
           "speaker": "未明子",
-          "text": "如果一个方案能让更多人活下来，我们就应该承认它比犹豫和平均分配更正当。"
+          "text": "辰田，我会按原文讲：历史定位、宇宙论、神正论、三位一体、生活对应。你要反驳，就别跳步。"
         },
         {
           "speaker": "辰田昇",
-          "text": "结果当然重要。但如果有人被排除在结果之外，那所谓“更多人”只是写法漂亮。"
+          "text": "那就一回合一回合来。正文由你说，笺注由我追问。"
         }
       ],
-      "next": "main_debate"
+      "next": "debate_history"
     },
-    "main_debate": {
+    "debate_history": {
       "mode": "debate",
-      "scene": "交叉辩论",
+      "scene": "小辩论一 / 历史定位",
       "lines": [],
-      "debate_id": "means_and_results"
+      "debate_id": "valentinus_history"
     },
-    "refute_resultism": {
+    "win_history": {
       "mode": "story",
-      "scene": "异议成立",
+      "scene": "小辩论一胜利",
       "lines": [
-        {
-          "speaker": "辰田昇",
-          "text": "你说统计已经完整，可历史影像里记录员承认，被放弃区域的人数没有写进最初统计。"
-        },
-        {
-          "speaker": "未明子",
-          "text": "那只是记录格式的问题。结论没有变，获救人数仍然更多。"
-        },
-        {
-          "speaker": "辰田昇",
-          "text": "不。讲义说结果主义必须公开代价。把一部分人从表格里拿掉，再说总数更好，这不是计算，是遮蔽。"
-        },
-        {
-          "speaker": "AR精灵",
-          "text": "很好。你击中的不是她的答案，而是答案成立之前的前提。"
-        },
         {
           "speaker": "老师",
-          "text": "指证成立。未明子，若代价没有被纳入统计，你的正当性论证需要重建。"
+          "text": "第一回合，辰田有效指出“主流”概念含混。未明子，进入体系结构。"
         }
       ],
-      "next": "ending_first_win"
+      "next": "debate_cosmos"
+    },
+    "debate_cosmos": {
+      "mode": "debate",
+      "scene": "小辩论二 / 场域论与认识论",
+      "lines": [],
+      "debate_id": "valentinus_cosmos"
+    },
+    "win_cosmos": {
+      "mode": "story",
+      "scene": "小辩论二胜利",
+      "lines": [
+        {
+          "speaker": "未明子",
+          "text": "好吧，Sophia那里我承认说快了。但宇宙论神话的功能还在。"
+        },
+        {
+          "speaker": "辰田昇",
+          "text": "那就看它是不是真的能处理神正论的剩余。"
+        }
+      ],
+      "next": "debate_theodicy"
+    },
+    "debate_theodicy": {
+      "mode": "debate",
+      "scene": "小辩论三 / 神正论调和",
+      "lines": [],
+      "debate_id": "valentinus_theodicy"
+    },
+    "win_theodicy": {
+      "mode": "story",
+      "scene": "小辩论三胜利",
+      "lines": [
+        {
+          "speaker": "老师",
+          "text": "第三回合，辰田击中了“调和”的前提。未明子，继续说明三位一体和社会秩序。"
+        }
+      ],
+      "next": "debate_trinity"
+    },
+    "debate_trinity": {
+      "mode": "debate",
+      "scene": "小辩论四 / 三位一体与社会秩序",
+      "lines": [],
+      "debate_id": "valentinus_trinity"
+    },
+    "win_trinity": {
+      "mode": "story",
+      "scene": "小辩论四胜利",
+      "lines": [
+        {
+          "speaker": "未明子",
+          "text": "那就不谈罗马统治术，谈生活里的人。这个结构今天也能看到。"
+        }
+      ],
+      "next": "debate_life"
+    },
+    "debate_life": {
+      "mode": "debate",
+      "scene": "小辩论五 / 生活附会",
+      "lines": [],
+      "debate_id": "valentinus_life"
     },
     "ending_first_win": {
       "mode": "result",
@@ -140,7 +225,7 @@
       "lines": [
         {
           "speaker": "系统",
-          "text": "辰田赢下第一轮辩论，获得哲学王积分。未明子第一次没有立刻反击，只把板书上的“少数”两个字圈了起来。"
+          "text": "辰田连续击破五个小回合，获得哲学王积分。未明子没有收起白板，只把“Theodicy”和“Gnosis”之间的线改成了虚线。"
         }
       ]
     },
@@ -151,52 +236,284 @@
       "lines": [
         {
           "speaker": "系统",
-          "text": "辰田的指证失去可信度。老师宣布辩论中止，未明子的结论暂时成立：只要总数更高，代价可以稍后再谈。"
+          "text": "辰田的指证失去可信度。老师宣布本回合中止，未明子的当前陈述暂时成立。"
         }
       ]
     }
   },
   "debates": {
-    "means_and_results": {
-      "title": "月末辩论：结果能否为手段辩护",
+    "valentinus_history": {
+      "title": "小辩论一：瓦伦廷派的历史定位",
       "opponent": "未明子",
       "statements": [
         {
-          "id": "s1",
+          "id": "h1",
           "speaker": "未明子",
-          "text": "判断一个行动，最清楚的标准就是结果。能救更多人的选择，比漂亮的原则更可靠。",
-          "press_text": "未明子把“结果”当成唯一标准。她还没有说明结果如何计算。",
-          "hint": "这句话是立场宣言。先听她如何处理少数代价。",
+          "text": "（1-2-1-3）就是Monistic Gnosticism，一元论诺斯替主义。历史代表人物就是华伦提诺。",
+          "press_text": "辰田昇：名字可以先统一成瓦伦廷。真正要看的是你如何定位它的历史地位。",
+          "hint": "这句是开场定义，还不是矛盾核心。",
+          "player_options": [
+            {
+              "label": "统一译名",
+              "response": "辰田昇：笺注3把华伦提诺统一记作瓦伦廷。先把名字钉住，否则后面论证会滑。"
+            }
+          ],
           "contradiction_evidence_id": "",
           "success_node": "",
           "wrong_penalty": 1
         },
         {
-          "id": "s2",
+          "id": "h2",
           "speaker": "未明子",
-          "text": "在旧人类的救援案例里，委员会统计过所有受影响者，所以他们的选择可以被称为公共利益。",
-          "press_text": "“统计过所有受影响者”是她论证里最硬的一块砖。若这块砖是空的，后面的墙就会倒。",
-          "hint": "回想历史影像里记录员承认了什么。",
-          "contradiction_evidence_id": "history_fragment",
-          "success_node": "refute_resultism",
+          "text": "瓦伦廷是公元二世纪很主流的诺斯替主义头头，差一点就能当家。",
+          "press_text": "辰田昇：这里的“主流”和“当家”都太顺了，像是把后来的教会结构倒投回二世纪。",
+          "hint": "用“辰田笺注4：并非主流”指出历史定位不稳。",
+          "player_options": [
+            {
+              "label": "追问主流",
+              "response": "辰田昇：诺斯替主义如果不是统一运动，就不能直接说它内部有一个清楚的主流。你说的主流是对谁而言？"
+            }
+          ],
+          "contradiction_evidence_id": "note_mainstream",
+          "success_node": "win_history",
           "wrong_penalty": 1
         },
         {
-          "id": "s3",
+          "id": "h3",
           "speaker": "未明子",
-          "text": "如果每个少数意见都能阻止行动，最后只会让所有人一起承担更大的损失。",
-          "press_text": "她把少数意见说成阻碍行动，但这不等于少数代价可以不被计算。",
-          "hint": "这句可以追问，但真正的矛盾在她声称统计完整的时候。",
+          "text": "后来三世纪轮到唯一说，二世纪这边就先由瓦伦廷派把问题抬起来。",
+          "press_text": "辰田昇：这句可以暂时放过。它更像转场，不是支撑核心论证的前提。",
+          "hint": "不要在这句指证，回到“二世纪很主流”。",
+          "player_options": [
+            {
+              "label": "要求回到二世纪",
+              "response": "辰田昇：如果二世纪的定位站不稳，后面说它“调和”谁的问题也会跟着不稳。"
+            }
+          ],
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        }
+      ]
+    },
+    "valentinus_cosmos": {
+      "title": "小辩论二：场域论与认识论",
+      "opponent": "未明子",
+      "statements": [
+        {
+          "id": "c1",
+          "speaker": "未明子",
+          "text": "瓦伦廷这里的场域论只有一个背景秩序，就是Bythos这个至高存在展开出的神圣宇宙秩序。",
+          "press_text": "辰田昇：场域论作为“一个故事”可以成立。问题在于你后面对裂缝和堕落的说法是否准确。",
+          "hint": "先听她怎样说明Sophia。",
+          "player_options": [
+            {
+              "label": "确认Bythos",
+              "response": "辰田昇：Bythos可以先记为至高存在。这个设定本身还不是我要打的点。"
+            }
+          ],
           "contradiction_evidence_id": "",
           "success_node": "",
           "wrong_penalty": 1
         },
         {
-          "id": "s4",
+          "id": "c2",
           "speaker": "未明子",
-          "text": "所以，结果已经证明手段正当。继续纠结过程，只是在逃避必须做出的选择。",
-          "press_text": "这是结论。要推翻它，需要先推翻前面的统计前提。",
-          "hint": "不要攻击结论本身，攻击支撑结论的材料。",
+          "text": "这个体系里，Sophia和Sakla像一对东西，一边智慧一边愚蠢，最后一起把凡俗世界堕落出来。",
+          "press_text": "辰田昇：她把Sophia、Sakla和成对移涌混成了一团。脚注正好能拆开这团线。",
+          "hint": "用“辰田笺注10/12：Sophia并非一对堕落”指证。",
+          "player_options": [
+            {
+              "label": "追问成对关系",
+              "response": "辰田昇：你说“一对”，那Sophia真正成对的是谁？Sakla是愚蠢，不等于Sophia的配偶。"
+            }
+          ],
+          "contradiction_evidence_id": "note_sophia_single",
+          "success_node": "win_cosmos",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "c3",
+          "speaker": "未明子",
+          "text": "所以它的场域就是一个宇宙论神话，一部电影放到底，信的人就跟着这个叙事走。",
+          "press_text": "辰田昇：这句是概括。它可以作为意识形态描述，但不能修补上一句的术语错误。",
+          "hint": "不要在这里指证，回到Sophia和Sakla那句。",
+          "player_options": [
+            {
+              "label": "追问叙事功能",
+              "response": "辰田昇：叙事能组织经验，但叙事功能不能保证其中每个概念都准确。"
+            }
+          ],
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        }
+      ]
+    },
+    "valentinus_theodicy": {
+      "title": "小辩论三：Gnosis能否调和神正论",
+      "opponent": "未明子",
+      "statements": [
+        {
+          "id": "t1",
+          "speaker": "未明子",
+          "text": "瓦伦廷派要处理的就是Theodicy那块剩余：神圣秩序为什么会和世界上的恶缠在一起。",
+          "press_text": "辰田昇：方向对了。真正的问题是，她给出的Gnosis是否真的能处理这个剩余。",
+          "hint": "继续听她如何声称“调和”。",
+          "player_options": [
+            {
+              "label": "确认问题",
+              "response": "辰田昇：如果题目是“恶何以存在”，那答案不能只把恶移动到另一个名字下面。"
+            }
+          ],
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "t2",
+          "speaker": "未明子",
+          "text": "Gnosis告诉你：Bythos归根结底是神圣的，Evil来自Sophia的堕落，所以Theodicy和evil之间的张力被调和了。",
+          "press_text": "辰田昇：她把“解释恶来自哪里”当成“调和恶为什么可能存在”。两者不是一回事。",
+          "hint": "用“辰田笺注14/15：剩余没有被调和”指证。",
+          "player_options": [
+            {
+              "label": "追问Sophia为何堕落",
+              "response": "辰田昇：如果Sophia的堕落也发生在神圣秩序里，那你仍然要解释神圣秩序为什么容许这个裂缝。"
+            },
+            {
+              "label": "追问调和对象",
+              "response": "辰田昇：你说调和Theodicy和evil，可前面又把Creationism拉进来。被调和的两项到底是哪两项？"
+            }
+          ],
+          "contradiction_evidence_id": "note_theodicy_gap",
+          "success_node": "win_theodicy",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "t3",
+          "speaker": "未明子",
+          "text": "人可以通过word、incarnation和spirit获得Gnosis，然后从最低等的物质世界里回家。",
+          "press_text": "辰田昇：这是救赎路径。救赎路径不能替代神正论论证。",
+          "hint": "不要在这里指证，回到“张力被调和”的那句。",
+          "player_options": [
+            {
+              "label": "区分救赎和论证",
+              "response": "辰田昇：就算Gnosis能救赎信徒，也不等于它已经解释恶为什么能出现在神圣秩序里。"
+            }
+          ],
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        }
+      ]
+    },
+    "valentinus_trinity": {
+      "title": "小辩论四：三位一体与社会秩序",
+      "opponent": "未明子",
+      "statements": [
+        {
+          "id": "r1",
+          "speaker": "未明子",
+          "text": "瓦伦廷为什么落选？因为他的体系没办法坚持Trinity，没法维持罗马等级制的社会整合。",
+          "press_text": "辰田昇：她把二世纪基督教、罗马统治和后来的三位一体问题压成同一个场景。",
+          "hint": "用“辰田笺注16/17：二世纪罗马语境”指证。",
+          "player_options": [
+            {
+              "label": "追问时代背景",
+              "response": "辰田昇：二世纪基督教还被罗马帝国打压。罗马统治者为什么会用三位一体来维稳？"
+            }
+          ],
+          "contradiction_evidence_id": "note_roman_context",
+          "success_node": "win_trinity",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "r2",
+          "speaker": "未明子",
+          "text": "古代社会有spiritual、material、animal三种人，Trinity能给不同人群提供认同。",
+          "press_text": "辰田昇：这个社会学解释很有攻击性，但它依赖上一句的历史前提。",
+          "hint": "先打穿“二世纪罗马统治者需要Trinity”这个前提。",
+          "player_options": [
+            {
+              "label": "追问三分法",
+              "response": "辰田昇：三分法可以讨论，但不能先假定罗马统治者已经在用基督教三位一体组织社会。"
+            }
+          ],
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "r3",
+          "speaker": "未明子",
+          "text": "瓦伦廷派又要三元论又要回到一元论，这种结构方便甩锅，所以精英圈子受不了。",
+          "press_text": "辰田昇：笺注23、24、26可以继续追问“一元”和“三元”的滑动，但本回合关键是罗马语境。",
+          "hint": "这句可追问，但正确指证在第一句。",
+          "player_options": [
+            {
+              "label": "追问一元论价值",
+              "response": "辰田昇：如果“一元论”只表示一个造世者，那它对区分正统和诺斯替派的帮助很有限。"
+            },
+            {
+              "label": "追问三元结构",
+              "response": "辰田昇：笺注23说瓦伦廷派的三元是物质、魂、灵，不是直接等同于正统三位一体。"
+            }
+          ],
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        }
+      ]
+    },
+    "valentinus_life": {
+      "title": "小辩论五：生活附会是否成立",
+      "opponent": "未明子",
+      "statements": [
+        {
+          "id": "l1",
+          "speaker": "未明子",
+          "text": "生活里也有这种人：总说上面都是对的，只是下面一些代表出了岔子。",
+          "press_text": "辰田昇：这是她把瓦伦廷派结构附会到现实生活的入口。",
+          "hint": "继续听她如何说这个结构能消解矛盾。",
+          "player_options": [
+            {
+              "label": "确认附会对象",
+              "response": "辰田昇：也就是说，你把诺斯替式“下面出问题”转成了现实里的“执行出问题”。"
+            }
+          ],
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "l2",
+          "speaker": "未明子",
+          "text": "这种人相信自己有一种别人没有的Gnosis，能看穿其实是过程中谁出了问题，于是矛盾就被消解掉了。",
+          "press_text": "辰田昇：脚注31正好反过来说：这种说法今天常被嘲讽，说明它并没有真正消解危机。",
+          "hint": "用“辰田笺注31：世俗附会不成立”指证。",
+          "player_options": [
+            {
+              "label": "追问是否安抚听众",
+              "response": "辰田昇：如果这个解释真的解决危机，为什么今天反而被当成典型笑话？"
+            }
+          ],
+          "contradiction_evidence_id": "note_worldly_analogy",
+          "success_node": "ending_first_win",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "l3",
+          "speaker": "未明子",
+          "text": "所以我说，一元论诺斯替主义不是古代材料而已，它在生活里还一直活着。",
+          "press_text": "辰田昇：生活对应可以作为观察，但不能倒过来证明前面的神正论调和成立。",
+          "hint": "不要在这里指证，回到“矛盾被消解”的那句。",
+          "player_options": [
+            {
+              "label": "区分类比和证明",
+              "response": "辰田昇：类比可以启发理解，但它不能替代证明。生活里有类似结构，不代表你的理论链条成立。"
+            }
+          ],
           "contradiction_evidence_id": "",
           "success_node": "",
           "wrong_penalty": 1

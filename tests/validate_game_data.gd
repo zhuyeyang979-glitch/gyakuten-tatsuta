@@ -3,6 +3,14 @@ extends SceneTree
 const GameDataResource := preload("res://scripts/GameData.gd")
 const STORY_PATH := "res://data/story.json"
 
+const TARGET_DEBATES := [
+	"valentinus_history",
+	"valentinus_cosmos",
+	"valentinus_theodicy",
+	"valentinus_trinity",
+	"valentinus_life"
+]
+
 
 func _init() -> void:
 	var exit_code := 0
@@ -26,33 +34,36 @@ func _init() -> void:
 
 
 func _validate_debate_flow(data) -> int:
-	var debate: Dictionary = data.get_debate("means_and_results")
-	if debate.is_empty():
-		push_error("Missing target debate.")
-		return 1
+	for debate_id in TARGET_DEBATES:
+		var debate: Dictionary = data.get_debate(debate_id)
+		if debate.is_empty():
+			push_error("Missing target debate: %s" % debate_id)
+			return 1
 
-	var statements: Array = debate.get("statements", [])
-	if statements.is_empty():
-		push_error("Target debate has no statements.")
-		return 1
+		var statements: Array = debate.get("statements", [])
+		if statements.is_empty():
+			push_error("Target debate has no statements: %s" % debate_id)
+			return 1
 
-	var correct_statement: Dictionary = data.get_first_correct_statement("means_and_results")
-	if correct_statement.is_empty():
-		push_error("Target debate has no correct evidence path.")
-		return 1
+		var correct_statement: Dictionary = data.get_first_correct_statement(debate_id)
+		if correct_statement.is_empty():
+			push_error("Target debate has no correct evidence path: %s" % debate_id)
+			return 1
 
-	var evidence_id := String(correct_statement.get("contradiction_evidence_id", ""))
-	if not data.evidence.has(evidence_id):
-		push_error("Correct statement points to missing evidence.")
-		return 1
+		var evidence_id := String(correct_statement.get("contradiction_evidence_id", ""))
+		if not data.evidence.has(evidence_id):
+			push_error("Correct statement points to missing evidence: %s / %s" % [debate_id, evidence_id])
+			return 1
 
-	var success_node := String(correct_statement.get("success_node", ""))
-	if not data.nodes.has(success_node):
-		push_error("Correct statement points to missing success node.")
-		return 1
+		var success_node := String(correct_statement.get("success_node", ""))
+		if not data.nodes.has(success_node):
+			push_error("Correct statement points to missing success node: %s / %s" % [debate_id, success_node])
+			return 1
 
+	var first_debate: Dictionary = data.get_debate(TARGET_DEBATES[0])
+	var first_statements: Array = first_debate.get("statements", [])
 	var reputation := 5
-	var wrong_statement: Dictionary = statements[0]
+	var wrong_statement: Dictionary = first_statements[0]
 	reputation -= int(wrong_statement.get("wrong_penalty", 1))
 	if reputation != 4:
 		push_error("Wrong evidence should reduce reputation by one.")

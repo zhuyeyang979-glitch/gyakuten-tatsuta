@@ -29,8 +29,8 @@ func _run() -> void:
 
 	game._choose_investigation("review_history")
 	game._choose_investigation("check_handout")
-	game._choose_investigation("inspect_power")
-	if not _expect(bool(game.evidence_unlocked.get("town_power_log", false)), "Investigation should unlock town_power_log."):
+	game._choose_investigation("inspect_blackboard")
+	if not _expect(bool(game.evidence_unlocked.get("history_fragment", false)), "Investigation should unlock history_fragment."):
 		quit(1)
 		return
 
@@ -43,28 +43,27 @@ func _run() -> void:
 		return
 
 	game._enter_present_mode()
-	game._present_or_select_evidence("ar_glasses")
+	game._present_or_select_evidence("debate_rule_card")
 	if not _expect(game.reputation == 4, "Wrong evidence should reduce reputation."):
 		quit(1)
 		return
 
 	game._move_statement(1)
-	game._move_statement(1)
 	game._press_statement()
-	if not _expect(String(game.feedback_text).contains("异常电场"), "Pressing the contradiction should reveal a hint."):
+	if not _expect(String(game.feedback_text).contains("记录员"), "Pressing the contradiction should reveal a hint."):
 		quit(1)
 		return
 
 	game._enter_present_mode()
-	game._present_or_select_evidence("town_power_log")
-	if not _expect(game.current_node_id == "reveal_mimeiko_spirit", "Correct evidence should enter reveal node."):
+	game._present_or_select_evidence("history_fragment")
+	if not _expect(game.current_node_id == "refute_resultism", "Correct evidence should enter refutation node."):
 		quit(1)
 		return
 
-	while game.current_node_id == "reveal_mimeiko_spirit":
+	while game.current_node_id == "refute_resultism":
 		game._advance_story()
 
-	if not _expect(game.current_node_id == "ending_truth_thread", "Reveal node should reach the victory result."):
+	if not _expect(game.current_node_id == "ending_first_win", "Refutation node should reach the victory result."):
 		quit(1)
 		return
 

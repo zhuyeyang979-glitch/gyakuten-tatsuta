@@ -26,7 +26,7 @@ func _init() -> void:
 
 
 func _validate_debate_flow(data) -> int:
-	var debate: Dictionary = data.get_debate("truth_and_happiness")
+	var debate: Dictionary = data.get_debate("means_and_results")
 	if debate.is_empty():
 		push_error("Missing target debate.")
 		return 1
@@ -36,7 +36,7 @@ func _validate_debate_flow(data) -> int:
 		push_error("Target debate has no statements.")
 		return 1
 
-	var correct_statement: Dictionary = data.get_first_correct_statement("truth_and_happiness")
+	var correct_statement: Dictionary = data.get_first_correct_statement("means_and_results")
 	if correct_statement.is_empty():
 		push_error("Target debate has no correct evidence path.")
 		return 1

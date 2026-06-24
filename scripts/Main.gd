@@ -389,8 +389,8 @@ func _render_result() -> void:
 		main_box.add_child(_make_label("%s：%s" % [line.get("speaker", ""), line.get("text", "")], 28, Color("#f4f1de")))
 
 	var ending := String(node.get("ending", ""))
-	if ending == "truth_thread":
-		main_box.add_child(_make_feedback_box("新的线索：未明子身边也存在一个“精灵”。"))
+	if ending == "debate_win":
+		main_box.add_child(_make_feedback_box("阶段胜利：本月位格的关键裂缝已被指出。"))
 	else:
 		main_box.add_child(_make_feedback_box("辩论失败。可以从交叉辩论重新尝试。"))
 		footer_box.add_child(_make_button("重试辩论", Callable(self, "_retry_debate")))

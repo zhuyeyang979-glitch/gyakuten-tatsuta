@@ -1,0 +1,211 @@
+{
+  "metadata": {
+    "title": "逆转辰田",
+    "case_title": "第一回：玻璃眼镜与月末辩论",
+    "version": "0.1.0"
+  },
+  "evidence": [
+    {
+      "id": "ar_glasses",
+      "name": "AR眼镜",
+      "description": "小学毕业前捡到的神秘眼镜。戴上后能看见AR精灵。",
+      "detail": "镜腿内侧没有电池仓，也没有常见的充电接口。辰田一直以为它只是某种被遗失的玩具。",
+      "unlocked": true
+    },
+    {
+      "id": "history_fragment",
+      "name": "历史影像片段",
+      "description": "AR精灵展示过的旧人类课堂影像，主题是自由与安排。",
+      "detail": "影像不能互动，只能观看。画面里的人反复讨论：如果幸福来自安排，它是否仍然属于自己？",
+      "unlocked": false
+    },
+    {
+      "id": "ideology_handout",
+      "name": "意识形态学讲义",
+      "description": "月末辩论指定讲义，题目是“被安排的幸福是否需要真相”。",
+      "detail": "讲义强调辩论不是背诵答案，而是找出对方论证中无法解释的裂缝。",
+      "unlocked": true
+    },
+    {
+      "id": "town_power_log",
+      "name": "小镇电力异常记录",
+      "description": "辰田从机房门缝里拍到的值日记录，显示教室周围一直存在异常电场。",
+      "detail": "记录显示月末辩论会场的电力读数长期偏高，却没有任何设备登记。AR眼镜恰好从未没电。",
+      "unlocked": false
+    }
+  ],
+  "nodes": {
+    "intro": {
+      "mode": "story",
+      "scene": "晨间 / 辰田町立第一中学",
+      "lines": [
+        {
+          "speaker": "辰田昇",
+          "text": "初中的第一个月末，意识形态学教室被改成了辩论场。所有灯都比平时亮，像在等待某个不会迟到的审判。"
+        },
+        {
+          "speaker": "AR精灵",
+          "text": "今天的题目是“被安排的幸福是否需要真相”。别只听漂亮话，听她哪里解释不了。"
+        },
+        {
+          "speaker": "老师",
+          "text": "辰田昇，未明子。哲学王候补的第一次正面对决，现在开始。"
+        }
+      ],
+      "next": "investigation"
+    },
+    "investigation": {
+      "mode": "investigation",
+      "scene": "辩论前调查",
+      "lines": [
+        {
+          "speaker": "辰田昇",
+          "text": "未明子太镇定了。她像是早就知道我会怎么说。"
+        }
+      ],
+      "investigations": [
+        {
+          "id": "review_history",
+          "title": "回看历史影像",
+          "text": "旧人类的课堂里，有人说：“不被告知真相的幸福，只是被管理的安静。”AR精灵沉默了很久。",
+          "unlock_evidence": "history_fragment"
+        },
+        {
+          "id": "check_handout",
+          "title": "翻看讲义",
+          "text": "讲义的页脚写着一句话：辩论的关键不在反驳结论，而在指出前提的来源。",
+          "unlock_evidence": ""
+        },
+        {
+          "id": "inspect_power",
+          "title": "查看会场记录",
+          "text": "机房门边的记录表显示，辩论教室附近有持续电场。眼镜没有接口，却从来不需要充电。",
+          "unlock_evidence": "town_power_log"
+        }
+      ],
+      "next": "debate_opening"
+    },
+    "debate_opening": {
+      "mode": "story",
+      "scene": "月末辩论 / 第一轮",
+      "lines": [
+        {
+          "speaker": "未明子",
+          "text": "辰田，真相不是药。对没准备好的人来说，它只会成为伤口。"
+        },
+        {
+          "speaker": "辰田昇",
+          "text": "如果真相会伤人，那也要先证明是谁有资格把它藏起来。"
+        }
+      ],
+      "next": "main_debate"
+    },
+    "main_debate": {
+      "mode": "debate",
+      "scene": "交叉辩论",
+      "lines": [],
+      "debate_id": "truth_and_happiness"
+    },
+    "reveal_mimeiko_spirit": {
+      "mode": "story",
+      "scene": "异议成立",
+      "lines": [
+        {
+          "speaker": "辰田昇",
+          "text": "你说大家只需要教室里的灯，可这份记录证明，会场周围一直有看不见的电场。"
+        },
+        {
+          "speaker": "未明子",
+          "text": "那又怎么样？一间学校有电，很奇怪吗？"
+        },
+        {
+          "speaker": "辰田昇",
+          "text": "奇怪的是，我的眼镜没有电池仓，也没有充电口。可它从来没有停过。"
+        },
+        {
+          "speaker": "AR精灵",
+          "text": "她的视线偏了一下。不是看你，是看你右肩后方。"
+        },
+        {
+          "speaker": "辰田昇",
+          "text": "未明子，你也看得见什么东西，对吧？"
+        },
+        {
+          "speaker": "未明子",
+          "text": "……这不是这场辩论的问题。"
+        }
+      ],
+      "next": "ending_truth_thread"
+    },
+    "ending_truth_thread": {
+      "mode": "result",
+      "scene": "阶段胜利",
+      "ending": "truth_thread",
+      "lines": [
+        {
+          "speaker": "系统",
+          "text": "辰田赢下第一轮辩论，并发现未明子身边也存在一个“精灵”。小镇的真相第一次露出缝隙。"
+        }
+      ]
+    },
+    "fail_retry": {
+      "mode": "result",
+      "scene": "信誉归零",
+      "ending": "bad_end_seed",
+      "lines": [
+        {
+          "speaker": "系统",
+          "text": "辰田的指证失去可信度。老师宣布辩论中止，未明子的结论暂时成立：不知道真相，也可以被安排得很幸福。"
+        }
+      ]
+    }
+  },
+  "debates": {
+    "truth_and_happiness": {
+      "title": "月末辩论：被安排的幸福是否需要真相",
+      "opponent": "未明子",
+      "statements": [
+        {
+          "id": "s1",
+          "speaker": "未明子",
+          "text": "幸福首先是一种稳定的生活。只要生活稳定，真相并不是必需品。",
+          "press_text": "未明子把“稳定”说得很重。她回避了一个问题：谁在定义稳定？",
+          "hint": "这句话还不是裂缝，先听她如何说明安排者。",
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "s2",
+          "speaker": "未明子",
+          "text": "学校、课程、辩论赛，都是大家一起选择出来的秩序。没有隐藏的安排者。",
+          "press_text": "她说“大家一起选择”，但她没有解释为什么课程总能刚好配合我们看到的历史片段。",
+          "hint": "可以追问，但证据还需要指向“隐藏机制”。",
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "s3",
+          "speaker": "未明子",
+          "text": "你所谓的神秘眼镜只是个人体验。它不可能证明小镇存在某种看不见的管理系统。",
+          "press_text": "这句话把眼镜孤立成个人体验。若能证明眼镜依赖小镇环境，它就不再只是幻觉。",
+          "hint": "会场附近长期存在异常电场，而眼镜没有充电结构。",
+          "contradiction_evidence_id": "town_power_log",
+          "success_node": "reveal_mimeiko_spirit",
+          "wrong_penalty": 1
+        },
+        {
+          "id": "s4",
+          "speaker": "未明子",
+          "text": "即便有些事我们不知道，那也是为了让我们先学会生活，而不是先学会怀疑。",
+          "press_text": "这像是有人教她这么说的。问题是，她为什么能确定“不知道”是被允许的？",
+          "hint": "她的论点很强，但真正的突破口在上一句。",
+          "contradiction_evidence_id": "",
+          "success_node": "",
+          "wrong_penalty": 1
+        }
+      ]
+    }
+  }
+}

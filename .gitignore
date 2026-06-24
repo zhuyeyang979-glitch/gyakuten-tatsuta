@@ -1,0 +1,15 @@
+# Godot local/editor state
+.godot/
+.import/
+
+# Exported builds and local presets
+builds/
+exports/
+export.cfg
+export_presets.cfg
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
